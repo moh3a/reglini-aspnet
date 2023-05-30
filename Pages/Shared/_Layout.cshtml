@@ -8,6 +8,28 @@
     <meta name="theme-color" content="#1b1f23" />
     <title>@ViewData["Title"] - reglini.dz</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        facebook: "#1876f2",
+                        aliexpress: "#ff4747",
+                        grim: "#1b1f23",
+                        success: "#16a34a",
+                        danger: "#ed3737",
+                        warning: "#eab308",
+                        lightTransparent: "rgb(0 0 0 / 0.05)",
+                        darkTransparent: "rgb(0 0 0 / 0.5)",
+                    },
+                    zIndex: {
+                        100: 100,
+                    },
+                },
+            },
+        }
+    </script>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AspReglini.styles.css" asp-append-version="true" />
 </head>
