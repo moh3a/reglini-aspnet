@@ -1,0 +1,32 @@
+﻿@page
+@model AspReglini.Pages.aliexpressModel
+@{
+	ViewData["Title"] = "Aliexpress";
+}
+
+<section class="px-4">
+    <p class="text-center text-sm font-bold font-mono my-2">
+        here starts everything
+    </p>
+    <div class="flex justify-center items-center">
+        <img src="~/public/aliexpress-ar21.png" alt="aliexpress logo" width="400" />;
+    </div>
+    <h1 class="select-none font-extrabold text-4xl font-mono w-full text-center">
+        <span class="uppercase bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-aliexpress">
+            between your hands
+        </span>
+    </h1>
+
+    <form id="aliexpress-search-form" class="flex justify-center items-center w-full">
+        <div class="w-full mx-2 mt-8 max-w-2xl lg:mx-auto lg:w-1/2">
+            <input 
+                name="query" 
+                type="search"
+                style="width:100%"
+                placeholder="example: watch, xt92, coat ... or https://www.aliexpress.com/item/xxxxxxx"
+                className="border-0 border-b border-grim dark:border-aliexpress caret-grim dark:caret-white focus:outline focus:border-none focus:ring-0 focus:outline-aliexpress bg-white dark:bg-grim backdrop-blur-md bg-black/5 dark:bg-black/50 rounded-lg px-3 py-1"
+                autoComplete="off"
+            />
+        </div>
+    </form>
+</section>
