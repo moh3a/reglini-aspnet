@@ -32,16 +32,88 @@
     </script>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AspReglini.styles.css" asp-append-version="true" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <h1>reglini.dz</h1>
+    <header class="mb-8 lg:mb-0">
+        <nav class="h-14 p-4 flex justify-between">
+            <div class="flex-1 flex justify-center relative bottom-2 lg:flex-none">
+                <a href="/">
+                    <img src="~/favicon.ico" alt="reglini logo" width="40" height="40" />
+                </a>
+            </div>
+        </nav>
     </header>
-    <div class="container">
-        <main role="main">
-            @RenderBody()
-        </main>
-    </div>
+
+    <main class="mb-2 min-h-[350px]" role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="relative">
+        <hr class="h-px mt-6 mb-2 mx-6 md:mx-10 lg:mx-20 border-none bg-gray-300 dark:bg-gray-700" />
+
+        <div class="container px-6 py-4 mx-auto">
+            <div class="lg:flex">
+                <div class="w-full -mx-6 lg:flex-1">
+                    <div class="px-6 text-center">
+                        <h2 class="cursor-pointer text-xl font-bold">reglini-dz</h2>
+
+                        <h3 class=" mt-2 text-gray-500 dark:text-gray-400">
+                            Welcome to reglini-dz, where you'll be able to buy items from Aliexpress using the local algerian dinars.
+                        </h3>
+
+                        <div class="flex justify-center mt-4 -mx-2">
+                            <a href="https://www.facebook.com/reglini.dz"
+                                  rel="noreferrer"
+                                  target="_blank" class="mx-2 text-blue-600 dark:text-white hover:text-blue-500 dark:hover:text-gray-100">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+
+                            <a class="cursor-pointer mx-2 text-blue-400 dark:text-white hover:text-blue-300 dark:hover:text-gray-100">
+                                <i class="fab fa-facebook-messenger"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/reglini.dz/"
+                               rel="noreferrer"
+                               target="_blank" class="mx-2 text-pink-600 dark:text-white hover:text-pink-700 dark:hover:text-gray-100">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 md:ml-16 lg:mt-0 lg:flex-1">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h1 class="font-bold uppercase">Info</h1>
+                            
+                            <a href="/support" class="block my-1 py-1 text-sm text-gray-500 dark:text-gray-400 hover:underline">Support</a>                         
+                            <a href="/pp" class="block my-1 py-1 text-sm text-gray-500 dark:text-gray-400 hover:underline">Privacy Policy</a>
+                            <a href="/tos" class="my-1 py-1 text-sm text-gray-500 dark:text-gray-400 hover:underline">Terms of Service</a>
+                        </div>
+
+                        <div>
+                            <h1 class="font-bold uppercase">Contact</h1>
+                            <div class="my-1 py-1 text-sm text-gray-500 dark:text-gray-400 hover:underline">
+                                213540861775
+                            </div>
+                            <div class="my-1 py-1 text-sm text-gray-500 dark:text-gray-400 hover:underline">
+                                support@reglini-dz.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full flex justify-center">
+                <img src="~/favicon.ico" alt="reglini logo" width="40" height="40" />
+            </div>
+        </div>
+    </footer>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
 
